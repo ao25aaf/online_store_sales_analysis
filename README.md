@@ -23,6 +23,8 @@ Queries were run on **22 October 2026**. The dataset is regenerated periodically
 
 ## How to reproduce
 
+Query outputs are saved as CSV files in the results folder.
+
 1. Open [BigQuery](https://console.cloud.google.com/bigquery) and create a free sandbox project (no credit card needed).
 2. Open a new query tab.
 3. Copy the queries from `online_store_sales_analysis_queries.sql` and run them one at a time.
