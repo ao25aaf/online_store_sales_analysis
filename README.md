@@ -25,12 +25,12 @@ Queries were run on **22 October 2026**. The dataset is regenerated periodically
 
 1. Open [BigQuery](https://console.cloud.google.com/bigquery) and create a free sandbox project (no credit card needed).
 2. Open a new query tab.
-3. Copy the queries from `online_store_sales_analysis.sql` and run them one at a time.
+3. Copy the queries from `online_store_sales_analysis_queries.sql` and run them one at a time.
 
 ## Key findings
 
 1. **Revenue has grown strongly.** Monthly revenue went from about $1,750 in Feb 2019 to about $375,000 in Sep 2026 (Q2). Jan 2019 and Oct 2026 are left out because they are partial months.
-2. **One in four orders never earns money.** About 15.1% of orders are cancelled and 10.0% are returned (Q4).
+2. **One in four orders never earns money.** About 15.1% of orders are cancelled, and 10.0% are returned (Q4).
 3. **Outerwear & Coats and Jeans are the top categories.** They bring in about $1.01M and $0.93M, well ahead of third-placed Sweaters at about $0.64M (Q3).
 4. **No single customer dominates.** The top 10 customers spent between $1,318 and $1,651 each, so the best customer is only about 25% ahead of the tenth (Q5).
 5. **Country barely affects item price.** Among the 11 countries with at least 1,000 items sold, the average item price falls between $58.67 and $60.85 (Q6).
@@ -41,7 +41,7 @@ Queries were run on **22 October 2026**. The dataset is regenerated periodically
 - How to join two tables on a shared column (`users` to `order_items`, `products` to `order_items`).
 - How to group by month using `DATE_TRUNC`.
 - How `HAVING` filters groups: small countries such as "Deutschland" (4 items) gave misleading averages until I set a minimum of 1,000 items.
-- How to check results for data quality, such as the same country spelled two ways (`Spain` / `España`, `Germany` / `Deutschland`).
+- How to check results for data quality, such as the same country spelt two ways (`Spain` / `España`, `Germany` / `Deutschland`).
 
 ## What I'd look at next
 
