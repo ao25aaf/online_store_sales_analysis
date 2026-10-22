@@ -1,0 +1,5 @@
+table_name,row_count
+users,100000
+orders,125090
+order_items,181596
+products,29120
